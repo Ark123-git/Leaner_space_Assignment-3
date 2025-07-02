@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+{% if error %}
+    <div class="alert alert-success">{{ error }}</div>
+{% else %}
+    <div class="alert alert-success">Account Successfully Verified</div>
+{% endif %}
+<a class="btn btn-primary" href="/login/">Go to Login</a>
+{% endblock %}
