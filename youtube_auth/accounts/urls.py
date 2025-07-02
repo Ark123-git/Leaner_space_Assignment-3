@@ -7,5 +7,5 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('dashboard/', views.dashboard_view, name='dashboard'),
     path('verify/<uuid:token>/', views.verify_view, name='verify'),
-    path('', views.login_view),  # Optional: set default to login page
+    path('', views.login_view),  
 ]

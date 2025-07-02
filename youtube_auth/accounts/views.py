@@ -28,7 +28,7 @@ def verify_view(request, token):
         profile.user.is_active = True
         profile.user.save()
         profile.save()
-        # messages.success(request, 'Account Verified Successfully')
+        
         return render(request,'verify.html')
     except:
         return render(request, 'verify.html', {'error': 'Invalid token'})
